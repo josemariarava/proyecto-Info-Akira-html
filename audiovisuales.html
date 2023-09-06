@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="doberman.ico" type="image/x-icon">
+    <title>Akira, la doberman</title>
+
+    <style>
+        body{
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to left, rgb(193, 193, 255), rgb(255, 193, 201));
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li{
+            float: left;
+        }
+
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: #44bc40;
+        }
+    
+        .active{
+            background-color: #dc9441;
+        }
+
+        h1{
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery{
+            margin: 5px;
+            border: 3px solid #0a0afe;
+            float: left;
+            width: 30vw;
+        }
+
+        div.gallery:hover{
+            border: 2px solid #e81b1b;
+        }
+
+        div.gallery img{
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado{
+            display: flex;
+            justify-content: center;
+        }
+
+        .centrado video{
+            width: 900px;
+            height: 500px;
+            
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10PX;
+            text-align: center;
+            clear: both;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akira, la doberman Cajamarquina</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="centrado"><video src="assets/videos/akiravid1.mp4" autoplay muted ></video></div>
+
+    <div class="centrado"><audio src="assets/audio/akiraaudio1.mp3" autoplay controls></audio></div>
+
+    <section class="centrado">
+        <div class="gallery">
+            <a href="assets/img/akiradisparando.png" target="_blank"><img src="assets/img/akiradisparando.png" alt="Akira en el Espacio"  width="300">  </a>
+            <div class="desc">Akira IA Arma</div>              
+        </div>
+        <div class="gallery">         
+            <a href="/assets/img/akiramesoldado.png" target="_blank"><img src="assets/img/akiramesoldado.png" alt="Akira en el Espacio" width="300">
+            </a>   
+            <div class="desc">Akira IA Mochina de Soldado</div>
+        </div>
+        <div class="gallery">
+            <a href="assets/img/akiraspacedos.png" target="_blank"><img src="assets/img/akiraspacedos.png" alt="Akira en el Espacio" width="300"></a>
+            <div class="desc">Akira IA traje del Espacio</div>
+        </div>       
+          
+    </section>
+
+ 
+
+
+    <footer class="footer">
+        <p>Derechos reservados JM &copy; 2023</p>
+    </footer>
+ 
+</body>
+</html>
